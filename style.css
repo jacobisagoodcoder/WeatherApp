@@ -1,0 +1,46 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(77, 121, 77);
+    color: white;
+    text-align: center;
+    grid-area: header;
+}
+
+.hide{
+    display: none;
+}
+
+.gridItem1{
+    grid-area: info;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+.gridItem1 > ul > li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.gridItem2{
+    grid-area: skies;
+    text-align: center;
+}
+
+.container{
+    border: solid rgb(77, 121, 77) 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header header header"
+    ". info ."
+    ". skies ."
+}
+
