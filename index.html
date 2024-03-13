@@ -7,24 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Today's Forecast &#9925;</h1>
-    </header>
-    <main class="hide" id="weatherForecastMain">
+    <main class="hide container" id="weatherForecastMain">
+        <header>
+            <h1>Today's Forecast &#9925;</h1>
+        </header>
+        <div class="gridItem1">
         <h2>Some things about where you are.. 🌝</h2>
         <ul>
             <li id="elevation"></li>
             <li id="tempMax"></li>
             <li id="tempMin"></li>
         </ul>
-
+    </div>
+    <div class="gridItem2">
         <h2>How are the skies lookin'? 👀</h2>
-        <ul>
-            <li id="rain"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <p id="rain"></p>
+    </div>
     </main>
 </body>
 <script src="./script.js"></script>

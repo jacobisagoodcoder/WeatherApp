@@ -6,8 +6,31 @@ header{
     background-color: rgb(77, 121, 77);
     color: white;
     text-align: center;
+    grid-area: header;
 }
 
 .hide{
     display: none;
+    
 }
+
+.gridItem1{
+    grid-area: info;
+    border-bottom: solid black 1px;
+}
+
+.gridItem2{
+    grid-area: skies;
+    text-align: center;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header header header"
+    ". info ."
+    ". skies ."
+}
+
