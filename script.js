@@ -18,7 +18,6 @@ function getLocation(){
 function success(position){
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
-    console.log(typeof(lat), long);
     getWeather(lat, long);
 }
 
@@ -32,7 +31,6 @@ async function getWeather(lat, long){
     try{
         const response = await fetch(url);
         const weather = await response.json();
-        console.log(weather)
         if(response){
             const elevationFt = Math.floor(weather.elevation * 3.28);
             mainElement.classList.remove('hide');
