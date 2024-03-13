@@ -11,6 +11,7 @@ function getLocation(){
         }
     } catch(err){
         console.error(err)
+        window.alert("Please accept location services to use this app!")
     }
 }
 
@@ -23,6 +24,7 @@ function success(position){
 
 function error(){
     console.log("Location Services Denied!")
+    window.alert("Please accept location services to use this app!")
 }
 
 async function getWeather(lat, long){
